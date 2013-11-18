@@ -10,7 +10,12 @@ describe ConsumerScore do
       expect(@score).to respond_to(:get_score).with(3).arguments
     end
 
-    it "is given a valid arguments
+    it "when given valid arguments returns a JSON object" do
+      income = 50000
+      zipcode = 60201
+      age = 35
+      result = JSON.parse(@score.get_score(income, zipcode, age))
+      expect result.to be_a(Hash)
     end
   end
 end
