@@ -17,5 +17,12 @@ describe ConsumerScore do
       result = JSON.parse(@score.get_score(income, zipcode, age))
       expect(result).to be_a(Hash)
     end
+
+    it "returns an error when given invalid arguments" do
+      income = nil
+      zipcode = 60201
+      age = 35
+      expect(@score.get_score(income, zipcode, age)).to eq("An error has occurred: please supply a valid income")
+    end
   end
 end
