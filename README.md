@@ -16,6 +16,9 @@ Dependencies
 This gem uses a number of open source projects to work properly:
 * httparty [https://github.com/jnunemaker/httparty]
 
+This dependency exists for running the rspec tests:
+* fakeweb [https://github.com/chrisk/fakeweb]
+
 
 Installation
 --------------
