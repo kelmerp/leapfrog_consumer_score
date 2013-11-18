@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = 'Leapfrog Online Consumer Score API wrapper'
   s.authors = ["Kelmer Perez"]
   s.email = 'kelmerp@gmail.com'
-  s.files = [""]
-  s.homepage = ''
+  s.files = ['lib/consumer_score.rb', 'spec/consumer_score_spec.rb', 'spec/spec_helper.rb']
+  s.homepage = 'https://github.com/kelmerp/leapfrog_consumer_score'
   s.license = 'MIT'
 end
