@@ -51,6 +51,7 @@ Clone the repo into a folder in your computer and run rpsec.
 
 ```ruby
 $> git clone https://github.com/kelmerp/leapfrog_consumer_score.git [yourfoldername]
+$> bundle
 $> cd [yourfoldername]
 $> rspec
 ```
