@@ -13,7 +13,7 @@ Version
 Dependencies
 -----------
 
-This gem uses a number of open source projects to work properly:
+This gem uses a couple of open source projects to work properly:
 * httparty [https://github.com/jnunemaker/httparty]
 
 This dependency exists for running the rspec tests:
@@ -23,26 +23,36 @@ This dependency exists for running the rspec tests:
 Installation
 --------------
 
-```sh
+```ruby
 gem install leapfrog_consumer_score
 ```
 
 Then require it in your project
 ----------------
 
-```sh
+```ruby
 require 'leapfrog_consumer_score'
 ```
 
 Usage
 --------------
 
-```sh
+```ruby
 score = ConsumerScore.new
 income = 50000
 zipcode = 60201
 age = 35
-score.get_score(income, zipcode, age)
+score.get_score(income, zipcode, age)    #{"propensity"=>0.26532, "ranking"=>"C"}
+```
+
+Testing
+----------------
+Clone the repo into a folder in your computer and run rpsec.
+
+```ruby
+$> git clone https://github.com/kelmerp/leapfrog_consumer_score.git [yourfoldername]
+$> cd [yourfoldername]
+$> rspec
 ```
 
 License
