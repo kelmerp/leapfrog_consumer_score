@@ -15,7 +15,7 @@ describe ConsumerScore do
       zipcode = 60201
       age = 35
       result = JSON.parse(@score.get_score(income, zipcode, age))
-      expect result.to be_a(Hash)
+      expect(result).to be_a(Hash)
     end
   end
 end
