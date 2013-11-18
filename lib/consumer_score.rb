@@ -9,7 +9,9 @@ class ConsumerScore
   BASE_URL = "http://internal.leapfrogonline.com"
 
   def get_score(income, zipcode, age)
-    response = HTTParty.get("#{BASE_URL}/consumer_scoring?income=#{income}&zipcode=#{zipcode}&age=#{age}")
+    url = "#{BASE_URL}/consumer_scoring?income=#{income}&zipcode=#{zipcode}&age=#{age}"
+    response = HTTParty.get(url)
+    response.body
   end
   
 end
