@@ -27,11 +27,11 @@ Installation
 gem install leapfrog_consumer_score
 ```
 
-Then require it in your project
+Then require consumer_score in your project
 ----------------
 
 ```ruby
-require 'leapfrog_consumer_score'
+require 'consumer_score'
 ```
 
 Usage
